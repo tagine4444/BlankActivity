@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_quest_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="When is Christmas?"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/pervious_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_quest_id"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/next_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pervious_btn1"
+            android:layout_alignTop="@+id/pervious_btn1"
+            android:text="Next" />
+
+    </RelativeLayout>
+
+</LinearLayout>
