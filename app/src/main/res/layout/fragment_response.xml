@@ -7,19 +7,29 @@
     android:orientation="vertical">
 
     <CheckBox
+        android:id="@+id/response1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="It doesn't exitst" />
 
     <CheckBox
+        android:id="@+id/response2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="December 25" />
 
     <CheckBox
+        android:id="@+id/response3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="December 26" />
+
+    <CheckBox
+        android:id="@+id/response4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Never" />
+
 
     <RadioButton
         android:layout_width="match_parent"

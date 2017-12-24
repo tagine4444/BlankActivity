@@ -27,4 +27,33 @@
         android:padding="5dp">
     </FrameLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignBottom="@+id/responseFragContainer">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/previous_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/previous_btn"
+                android:layout_alignTop="@+id/previous_btn"
+                android:text="Next" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
     </LinearLayout>
