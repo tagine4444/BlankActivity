@@ -43,9 +43,16 @@ public class TestFactory {
         final String[] TEST1_A_3D ={"Chidra","true"};
 
 
+        final String   TEST1_Q_4 = "Quelle est l'equipe qui a gagne le plus de Champions League";
+        final String[] TEST1_A_4A ={"Paris S.G","false"};
+        final String[] TEST1_A_4B ={"Real Madrid","true"};
+        final String[] TEST1_A_4C ={"Barcelone","false"};
+        final String[] TEST1_A_4D ={"Bayern Munich","false"};
+
         questionWithAnswers.add(createQuestionWithAnswers(TEST1_Q_1,TEST1_A_1A, TEST1_A_1B, TEST1_A_1C, TEST1_A_1D));
         questionWithAnswers.add(createQuestionWithAnswers(TEST1_Q_2,TEST1_A_2A, TEST1_A_2B, TEST1_A_2C, TEST1_A_2D));
         questionWithAnswers.add(createQuestionWithAnswers(TEST1_Q_3,TEST1_A_3A, TEST1_A_3B, TEST1_A_3C, TEST1_A_3D));
+        questionWithAnswers.add(createQuestionWithAnswers(TEST1_Q_4,TEST1_A_4A, TEST1_A_4B, TEST1_A_4C, TEST1_A_4D));
 
 
         Test test = new Test(TEST1_NAME, TEST1_DESC,questionWithAnswers,0);

@@ -59,7 +59,7 @@ public class Test {
     }
 
     public String getQuestionCounterMsg(){
-        return (this.questionIndex +1) +"/" + (this.maxQuestions +1) +": ";
+        return ( this.questionIndex +1) +"/" + (this.maxQuestions +1) +": ";
 
     }
 
