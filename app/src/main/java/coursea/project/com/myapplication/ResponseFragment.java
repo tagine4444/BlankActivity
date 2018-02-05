@@ -47,10 +47,13 @@ public class ResponseFragment extends Fragment {
         this.cb3 = (CheckBox)view.findViewById(R.id.response3);
         this.cb4 = (CheckBox)view.findViewById(R.id.response4);
 
-        this.cb1.setText(initialQuestionWithAnswers.getAnswer1());
-        this.cb2.setText(initialQuestionWithAnswers.getAnswer2());
-        this.cb3.setText(initialQuestionWithAnswers.getAnswer3());
-        this.cb4.setText(initialQuestionWithAnswers.getAnswer4());
+        if(initialQuestionWithAnswers!=null){
+            this.cb1.setText(initialQuestionWithAnswers.getAnswer1());
+            this.cb2.setText(initialQuestionWithAnswers.getAnswer2());
+            this.cb3.setText(initialQuestionWithAnswers.getAnswer3());
+            this.cb4.setText(initialQuestionWithAnswers.getAnswer4());
+        }
+
 
 
 

@@ -33,7 +33,10 @@ public class QuestionFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_question, container, false);
         this.questionTextView = (TextView) view.findViewById(R.id.text_quest_id);
-        this.questionTextView.setText(initialQuestionWithAnswers.getQuestion());
+        if(initialQuestionWithAnswers!=null){
+            this.questionTextView.setText(initialQuestionWithAnswers.getQuestion());
+        }
+
 
         return view;
     }

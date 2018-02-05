@@ -24,6 +24,13 @@ public class Test {
 
     private int timePerQuestion;
 
+    public Test(String name, String description,  int timePerQuestion) {
+        this.name = name;
+        this.description = description;
+        this.timePerQuestion = timePerQuestion;
+        this.maxQuestions = questionWithAnswers==null?0:questionWithAnswers.size()-1;
+    }
+
     public Test(String name, String description, List<QuestionWithAnswers> questionWithAnswers, int timePerQuestion) {
         this.name = name;
         this.description = description;
